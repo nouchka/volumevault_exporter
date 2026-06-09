@@ -5,7 +5,7 @@ Exporter Prometheus en Go pour l'API VolumeVault.
 ## Variables d'environnement
 
 - `VOLUMEVAULT_API_URL` (obligatoire): URL de base de l'API, ex. `https://volumevault.example.com/api/v1`
-- `VOLUMEVAULT_API_TOKEN` (obligatoire): token ****** capacité `read`
+- `VOLUMEVAULT_API_TOKEN` (obligatoire): token avec capacité `read`
 - `LISTEN_ADDRESS` (optionnel): adresse d'écoute, défaut `:9780`
 - `METRICS_PATH` (optionnel): chemin des métriques, défaut `/metrics`
 - `VOLUMEVAULT_TIMEOUT` (optionnel): timeout HTTP, défaut `10s`
