@@ -1,0 +1,10 @@
+services:
+  volumevault_exporter:
+    build: .
+    image: ghcr.io/nouchka/volumevault_exporter:local
+    environment:
+      VOLUMEVAULT_API_URL: ${VOLUMEVAULT_API_URL:-https://volumevault.lan.sdsix.org/api/v1}
+      VOLUMEVAULT_API_TOKEN: ${VOLUMEVAULT_API_TOKEN:-change-me}
+      LISTEN_ADDRESS: :9780
+    ports:
+      - "9780:9780"
